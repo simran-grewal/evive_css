@@ -1,0 +1,234 @@
+line-hight: 2rem // it is distance between lines
+font-family
+font-size
+color
+font-weight: bold;
+
+body{
+background: url(' ')
+}
+
+*************************************************************
+Font Size (px, %, em, rem)
+
+16px is default size.
+100% is default size i.e 100% = 16px
+if there are n paragraph and we want to access one of paragraph then use-
+p:nth-of-type(2) {
+    font-size: 
+} 
+
+
+p:nth-child(3) {
+   
+}
+
+
+rem is from root (from browser window) and em is not from root (it is from parent);
+
+if i mention font-size in body then it will change the em but not the rem
+
+
+font-style: oblique;
+font-style: italic
+
+
+********************************************
+font-weight:100....
+or 
+font-weight:bold
+
+*************Text Decoration*************
+a{
+   text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+
+p:nth-of-type(1) span {
+  text-decoration:line-through
+  text-decoration:overline
+}
+
+********Changing Color of text*************
+color:
+
+********Text Alignment************
+text-align:left||center|| right|| justify
+left is by default text alignment property
+
+*********Text Indenting*********
+to intend the first line of paragraph
+text-indent: 3em;
+text-indent: -2em;
+
+***** Letter Spacing *****
+spacing between letter
+letter-spacing:10px;
+
+transition: all 2s;
+
+****Word Spacing*********
+Spacing between words;
+word-spacing:3px;
+
+****Space Between Elements(Margin)********
+use margin property for space between element
+
+*********Text Shadow *****************
+text-shadow: horizontal vertical blur_value color
+text-shadow: 1px 1px 2px red
+
+*********Linear Gradient*****************
+e.g background: linear-gradient(black, yellow);
+background start from black and end with yellow
+
+
+***************Flex***********************
+flex-direction: column;
+flex-grow: 1;
+flex-basis: 400px; // size 
+
+
+********Element Selector***********
+p {
+
+}
+
+to select element inside element only
+div p {
+}
+
+***********Transform**************
+img:hover {
+
+transform: scale(1.5);
+
+}
+
+
+********child of p************
+p  .author {
+
+}
+
+******Imidiate to p***********
+p.author {
+}
+
+
+*******Universal Selector*************
+* {
+
+}
+
+******Descandent Selector**********
+
+section article p {
+
+}
+
+
+********Group Selector**********
+
+h1, h2, a	 {
+    color: red;
+}
+
+
+*******Attribute Selector*******
+e.g class attribute
+// it will select all tag having attribute class :)
+[class] {
+   background: #ccc;
+}
+
+or
+
+[alt]: hover {
+   border: 2px solid green;
+}
+
+
+// article having attribute class
+article[class] {
+    border: 2px solid #000
+}
+
+// selector based upon attribute value
+[class = "post -1"] {
+    color: green
+}
+
+// if attribute value is space sepreted value or exact value
+[class ~= "learning-now" ] {
+    color: green;
+}
+
+// if attribute value is seperated by - (dash) or is solo value
+[class |= "learning"] {
+   color: green;
+}
+
+// attribute value starts with
+a[href^="http"] {
+    color: 
+}
+
+// attribute value end with 
+a[href$=".docx"] {
+    background: 	
+}
+
+// any word made up of value
+a[title*="book"] {
+
+}
+
+/*
+
+~ : exact match, white space
+
+| : exact match, -(dash)
+
+^ : startWith
+
+$: endWith
+
+*: exact match based character in word
+
+*/
+
+
+*******Transition and Transform***************
+
+***********Styling Links***************
+// active link
+a:link {
+    color: #ccc;
+}
+
+// visited link 
+a:visited{
+    color: #eee;
+}
+
+//active link
+a:active {
+    color: #2ecc71;
+}
+
+
+
+************Styling your focused element*****************
+
+:focus{
+  outline: none; //  when we press tab then outline will be none
+}
+
+a:focus {
+    background: url("-----------") no-repeat right;
+    padding: 0 30px 0 0;
+    color: #000
+}
