@@ -232,3 +232,12 @@ a:focus {
     padding: 0 30px 0 0;
     color: #000
 }
+
+
+*************Opacity****************
+define the opacity or element or text or image
+
+
+********Position**********
+position - fixed // it means element is not the part of the container 
+(top, bottom, left, right) are its attributes
