@@ -241,3 +241,14 @@ define the opacity or element or text or image
 ********Position**********
 position - fixed // it means element is not the part of the container 
 (top, bottom, left, right) are its attributes
+
+
+***********Transition*****************
+mention in inetial state --> transition-property and transition-duration
+
+**********Trransformation**********
+1> skewX(20deg), skewY(20deg), skew(20deg , -30deg) ---> skey (image) in x or y direction
+***********Rotate************
+1> rotate(50deg) // rotate 50deg in clock wise
+2> rotateX(50deg) // rotate on X axis
+3> rotateY(50deg) // rotate in Y axis
